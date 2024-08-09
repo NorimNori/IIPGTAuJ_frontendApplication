@@ -1,0 +1,11 @@
+body{
+	margin: 0;
+	padding: 0;
+	color: whitesmoke;
+    background-color: black;
+	font-family: 'VT323';
+
+	display: flex;
+	place-items: center;
+
+}
