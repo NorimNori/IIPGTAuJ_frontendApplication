@@ -1,13 +1,17 @@
-import { useState, useEffect } from "react"
-import './barraCarga.css'
+import { useEffect } from "react";
+import useLoading from "@/hooks/useLoading";
+import { useLoadingContext } from "@/contexct/LoadingContexct";
+import './barraCarga.css';
 
 const BarraCarga = () => {
-    const [filled, setFilled] = useState(0)
+
+    const { filled } = useLoadingContext();
+    const { handleLoading } = useLoading(0);
+
     useEffect(() => {
-        if (filled < 100 ) {
-            setTimeout(() => setFilled(prev => prev += 2),65)
-        }
-    },[filled])
+        handleLoading();
+    },[filled]);
+
     return (
         <>
             <div className="loadingBar">
@@ -17,7 +21,7 @@ const BarraCarga = () => {
 			  }}></div>
 		  </div>
         </>
-    )
-}
+    );
+};
 
-export default BarraCarga
+export default BarraCarga;

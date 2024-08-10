@@ -1,11 +1,15 @@
 import './App.css'
 import PantallaCarga from '@/pages/pantallaCarga/PantallaCarga'
+import { LoadingProvider } from './contexct/LoadingContexct'
 
 function App() {
 
     return (
         <>
-            <PantallaCarga />
+            <LoadingProvider>
+                {/* <h1>Hola mundo! ˣ‿ˣ</h1> */}
+                <PantallaCarga />
+            </LoadingProvider>
         </>
     )
 }
