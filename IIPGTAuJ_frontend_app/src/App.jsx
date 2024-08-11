@@ -1,15 +1,14 @@
 import './App.css'
 import PantallaCarga from '@/pages/pantallaCarga/PantallaCarga'
-import { LoadingProvider } from './contexct/LoadingContexct'
+import { useLoadingContext } from './contexct/LoadingContexct';
+import PantallaInicio from './pages/pantallaInicio/PantallaInicio';
 
 function App() {
-
+    const { filled } = useLoadingContext();
     return (
         <>
-            <LoadingProvider>
-                {/* <h1>Hola mundo! ˣ‿ˣ</h1> */}
-                <PantallaCarga />
-            </LoadingProvider>
+            {filled < 101 && <PantallaCarga />}
+            {filled === 101 && <PantallaInicio />}
         </>
     )
 }

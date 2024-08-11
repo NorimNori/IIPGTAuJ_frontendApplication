@@ -1,0 +1,32 @@
+ .icn-cont{
+    width: 13rem;
+    height: 30rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ .icn{
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.icn-img{
+   filter: invert(74%) sepia(78%) saturate(432%) hue-rotate(32deg) brightness(108%) contrast(101%);
+   width: 65%;
+   height: 65%;
+
+}
+.ltrs{
+   font-size: 1.5em;
+
+   position: absolute;
+   top: 11rem;
+   left: 8rem;
+
+}

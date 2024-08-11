@@ -1,17 +1,17 @@
-import { createContext, useState, useContext } from 'react';
+import { createContext, useState, useContext} from 'react';
 
 const LoadingContext = createContext();
 
 function LoadingProvider ({ children }) {
     const [filled, setFilled] = useState(0);
 
-    // const values = {
-    //     filled,
-    //     setFilled
-    // }
+    const values = {
+        filled,
+        setFilled
+    }
     return (
 
-        <LoadingContext.Provider value={{ filled, setFilled }}>
+        <LoadingContext.Provider value={values}>
             {children}
         </LoadingContext.Provider>
     );
