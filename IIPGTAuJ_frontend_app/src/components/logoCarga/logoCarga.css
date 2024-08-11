@@ -1,6 +1,6 @@
 .cont {
     font-size: 3rem;
-    color: #adff2f;
+    color: var(--color-greenyellow);
 }
 .pt-1{
     display: flex;
@@ -26,7 +26,7 @@ h3{
     margin: auto;
 }
 #mr1{
-    border: solid #adff2f 1px;
+    border: solid var(--color-greenyellow) 1px;
     font-size: .3em;
     padding: .1em;
     border-radius: 100%;
@@ -36,7 +36,7 @@ h3{
     top: 5px;
 }
 #mr2{
-    border: solid #adff2f 1px;
+    border: solid var(--color-greenyellow)1px;
     font-size: .2em;
     padding: .1em;
     border-radius: 100%;
@@ -47,6 +47,6 @@ h3{
 }
 #xd{
     font-size: 3.5rem;
-    color: #ff4500;
+    color: var(--color-orangered);
     margin-left: .3em;
 }

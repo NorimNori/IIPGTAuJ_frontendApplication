@@ -8,11 +8,10 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
 }
 .btn-logo{
-    border: intset #397cd4 2px;
-    background-color: blue;
+    border: intset 2px;
+    background-color: var(--color-blue);
     width: 7%;
     min-width: 7.8rem;
     height: 100%;

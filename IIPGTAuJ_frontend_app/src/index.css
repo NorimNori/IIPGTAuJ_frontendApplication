@@ -2,13 +2,17 @@
 
 :root{
 	--color-greenyellow: #adff2f;
-	
+	--color-donegalgreen: #0f5701;
+	--color-lincolngreen: #0b3d01;
+	--color-orangered: #ff4500;
+	--color-blue: #0000ff;
+	--color-richblack: #021101;
 }
 
 body {
 	margin: 0;
 	padding: 0;
-    background-color: #021101;
+    background-color: var(--color-richblack);
 	font-family: 'VT323';
 	color: var(--color-greenyellow);
 
