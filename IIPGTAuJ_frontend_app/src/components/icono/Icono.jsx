@@ -1,13 +1,14 @@
+import useOpen from '@/hooks/useOpen'
 import './icono.css'
 
 function Icono() {
-
+    const { isOpen } = useOpen();
     return (
         <>
             <aside className='icn-cont'>
-                <figure className="icn" >
+                <figure className="icn" onClick={isOpen}>
                     <img className="icn-img"src="./src/assets/notes.png"/>
-                    <span className='ltrs'>Notas</span>
+                    <span className='ltrs'>Block de notas</span>
                 </figure>
                 <figure className="icn">
                     <img  className="icn-img" src="./src/assets/folder.png"/>

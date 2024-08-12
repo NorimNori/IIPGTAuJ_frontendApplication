@@ -16,10 +16,17 @@
     align-items: center;
     position: relative;
 }
+.icn:hover{
+   filter: brightness(1.1);
+   width: 110%;
+   height: 60%;
+   cursor: pointer;
+   transition: 1ms;
+}
 .icn-img{
    filter: invert(74%) sepia(78%) saturate(432%) hue-rotate(32deg) brightness(108%) contrast(101%);
-   width: 65%;
-   height: 65%;
+   width: 55%;
+   height: 55%;
 
 }
 .ltrs{
@@ -28,5 +35,4 @@
    position: absolute;
    top: 11rem;
    left: 8rem;
-
 }

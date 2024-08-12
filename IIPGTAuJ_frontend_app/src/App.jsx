@@ -1,7 +1,7 @@
 import './App.css'
 import PantallaCarga from '@/pages/pantallaCarga/PantallaCarga'
-import { useLoadingContext } from './contexct/LoadingContexct';
-import PantallaInicio from './pages/pantallaInicio/PantallaInicio';
+import { useLoadingContext } from '@/contexct/LoadingContexct';
+import PantallaInicio from '@/pages/pantallaInicio/PantallaInicio';
 
 function App() {
     const { filled } = useLoadingContext();
