@@ -1,3 +1,5 @@
+import { MdOutlineNotes } from "react-icons/md";
+import { AiOutlineFolder } from "react-icons/ai";
 import useOpen from '@/hooks/useOpen'
 import './icono.css'
 
@@ -7,11 +9,11 @@ function Icono() {
         <>
             <aside className='icn-cont'>
                 <figure className="icn" onClick={isOpen}>
-                    <img className="icn-img"src="./src/assets/notes.png"/>
-                    <span className='ltrs'>Block de notas</span>
+                    <MdOutlineNotes className="icn-img"/>
+                    <span className='ltrs'>Adopta_un_junior.txt</span>
                 </figure>
                 <figure className="icn">
-                    <img  className="icn-img" src="./src/assets/folder.png"/>
+                    <AiOutlineFolder className="icn-img"/>
                     <span className='ltrs'>Documentos</span>
                 </figure>
             </aside>
