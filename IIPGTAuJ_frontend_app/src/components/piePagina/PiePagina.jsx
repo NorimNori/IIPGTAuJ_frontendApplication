@@ -1,3 +1,4 @@
+import { SiWindows } from "react-icons/si";
 import './piePagina.css'
 
 function PiePagina() {
@@ -6,7 +7,7 @@ function PiePagina() {
         <>
             <footer>
                 <button className='btn-logo'>
-                    <img className='w-logo' src="../src/assets/ventanas.png"/>
+                    <SiWindows className='w-logo'/>
                    CERRAR
                 </button>
                 <div></div>

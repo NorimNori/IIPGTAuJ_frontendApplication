@@ -10,8 +10,8 @@ footer{
     align-items: center;
 }
 .btn-logo{
-    border: intset 2px;
-    background-color: var(--color-blue);
+    border: intset;
+    background-color: var(--color-richblack);
     width: 7%;
     min-width: 7.8rem;
     height: 100%;
@@ -19,6 +19,7 @@ footer{
     font-size: 2em;
     font-weight: bolder;
     font-family: 'VT323';
+    color: var(--color-greenyellow);
 
     display: flex;
     justify-content: start;

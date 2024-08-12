@@ -1,3 +1,4 @@
+import { SiWindows } from "react-icons/si";
 import './logoCarga.css'
 
 const LogoCarga = () => {
@@ -9,8 +10,7 @@ const LogoCarga = () => {
                      Macrohard
                         <span id="mr1">G</span>
                     </div>
-                    <img src="../src/assets/ventanas.png"/>
-
+                    <SiWindows className="cw-logo"/>
                 </div>
                 <div className='pt-3'>
                     <h3> Wentanasas<span id="mr2">G</span><span id='xd'>xd</span></h3>
