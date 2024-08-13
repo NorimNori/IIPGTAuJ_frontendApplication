@@ -8,33 +8,33 @@
     align-items: baseline;
  }
  .pt-2{
+    font-size: clamp(1.5rem, 1.217rem + 1.208vw, 2.5rem);
     margin-right: -2rem;
 
     display: flex;
     position: relative;
  }
- .cw-logo{
+ .cont .cw-logo{
     width: 30%;
     height: 30%;
     position: relative;
-    left: .7em;
  }
 .pt-3{
     font-weight: bolder;
     position: relative;
 }
 h3{
-    font-size: 5rem;
+    font-size: clamp(4rem, 3.434rem + 2.415vw, 6rem);
     margin: auto;
 }
 #mr1{
     border: solid var(--color-greenyellow) 1px;
-    font-size: .3em;
+    font-size: clamp(0.3rem, 0.13rem + 0.725vw, 0.9rem);
     padding: .1em;
     border-radius: 100%;
 
     position: absolute;
-    left: 180px;
+    left: 100%;
     top: 5px;
 }
 #mr2{
@@ -52,4 +52,7 @@ h3{
     filter: brightness(1.3);
     font-size: 3.5rem;
     margin-left: .3em;
+}
+.professional{
+    font-size: clamp(3rem, 2.434rem + 2.415vw, 5rem);
 }
