@@ -1,12 +1,12 @@
 import { SiWindows } from "react-icons/si";
 import './piePagina.css'
 
-function PiePagina() {
+function PiePagina({ isShutDown }) {
 
     return (
         <>
             <footer>
-                <button className='btn-logo'>
+                <button className='btn-logo' onClick={isShutDown}>
                     <SiWindows className='w-logo'/>
                    CERRAR
                 </button>

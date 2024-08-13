@@ -8,7 +8,7 @@ import './pantallaInicio.css'
 
 function PantallaInicio() {
     const { open } = useOpenContext();
-    const { isClose } = useOpen();
+    const { isClose, isShutDown } = useOpen();
     return (
         <>
             <section>
@@ -17,7 +17,7 @@ function PantallaInicio() {
                     {open && <NotasModal isClose={isClose} />}
                     <FondoPantalla />
                 </div>
-                <PiePagina />
+                <PiePagina isShutDown={isShutDown}/>
             </section>
 
         </>

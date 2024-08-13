@@ -1,7 +1,7 @@
 import { useOpenContext } from "@/contexct/OpenContext";
 
 function useOpen () {
-    const { setOpen } = useOpenContext();
+    const { setOpen, setClose } = useOpenContext();
 
     const isOpen = () => {
         setOpen(true);
@@ -11,9 +11,14 @@ function useOpen () {
         setOpen(false);
     }
 
+    const isShutDown = () => {
+        setClose(true)
+    }
+
     return {
         isOpen,
-        isClose
+        isClose,
+        isShutDown
     }
 }
 

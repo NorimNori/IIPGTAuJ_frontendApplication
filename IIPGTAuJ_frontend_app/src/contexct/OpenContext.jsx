@@ -4,10 +4,13 @@ const OpenContext = createContext();
 
 function OpenProvider ({ children }) {
     const [open, setOpen] = useState(false);
+    const [close, setClose] = useState(false);
 
     const values = {
         open,
-        setOpen
+        setOpen,
+        close,
+        setClose
     }
     return (
 
