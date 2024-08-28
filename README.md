@@ -96,7 +96,7 @@ La estructura del proyecto se basa en un template de VITE, con carpetas separada
 >
 > /vite.config.js
 >
->README.md
+README.md
 
     
 ## 7. Componentes de la aplicación
